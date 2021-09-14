@@ -74,6 +74,7 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-family: arial;
 }
 
 body {
@@ -172,6 +173,12 @@ header div {
   margin: 0 auto;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 header {
   background: #151515;
 }
@@ -183,7 +190,7 @@ header {
   text-indent: -100000px;
 }
 
-.wrapper nav {
+header nav {
   margin-top: 30px;
   margin-right: 20px;
   width: 50%;
@@ -199,13 +206,74 @@ header nav a {
   font-family: arial;
 }
 
-.wrapper nav ul {
+header nav ul {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: space-around;
 }
 
 header nav span {
   color: green;
   margin-left: 20px;
+}
+
+#lead-banner img {
+  width: 100%;
+}
+
+#lead-banner {
+  max-height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+.banner-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+#lead-banner p {
+  color: #fff;
+  font-size: 24px;
+  min-width: 600px;
+  margin-top: 30px;
+}
+
+#lead-banner a {
+  color: #fff;
+  display: block;
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  padding: 16px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 80px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c9e0a+0,3c9e0a+100 */
+  background: #3c9e0a; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #3c9e0a 0%,
+    #3c9e0a 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #3c9e0a 0%,
+    #3c9e0a 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #3c9e0a 0%,
+    #3c9e0a 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9e0a', endColorstr='#3c9e0a',GradientType=0 ); /* IE6-9 */
 }
