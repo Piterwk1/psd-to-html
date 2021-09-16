@@ -279,83 +279,115 @@ header nav span {
 }
 
 section {
-    margin: 40px 0 60px;
+  margin: 40px 0 60px;
 }
 
 section#points-of-sale ul {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #points-of-sale h2 {
-    height: 0;
-    text-indent: -10000px;
-}
-
-section ul {
-    display: flex;
-    justify-content: space-evenly;
+  height: 0;
+  text-indent: -10000px;
 }
 
 #points-of-sale li {
-    width: 32%;
+  width: 32%;
 }
 
 #points-of-sale li img {
-    width: 100%;
+  width: 100%;
 }
 
 #points-of-sale li h3 {
-    
-    text-align: center;
-    color:  #888;
-    font-size: 24px;
-    font-weight: normal;
-    margin: 10px  10px;
+  text-align: center;
+  color: #888;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 10px;
 }
 
 #points-of-sale p {
-    text-align: center;
-    width: 80%;
-    margin: 0 10%;
-    font-size: 14px;
-    color: #888;
-    line-height: 1.4em;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+  font-size: 14px;
+  color: #888;
+  line-height: 1.4em;
 }
 
-#clients {
-    border-top: 1px solid #ccc;
-    padding-top: 30px;
+#clients,
+#contact {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
 }
 
-#clients h2{
-background: green;
-color: #fff;
-padding: 8px;
-text-align: center;
-width: 250px;
-text-transform: uppercase;
-position: relative;
-top: -45px;
-margin: 0 auto;
-border-left: 16px solid #fff;
-border-right: 16px solid #fff;
+#clients h2,
+#contact h2 {
+  background: green;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  width: 250px;
+  text-transform: uppercase;
+  position: relative;
+  top: -45px;
+  margin: 0 auto;
+  border-left: 16px solid #fff;
+  border-right: 16px solid #fff;
 }
 
 .clients {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.clients img{
-    width: 30%;
+.clients img {
+  width: 30%;
 }
 
 #clients blockquote {
-    width: 66%;
-    text-align: center;
-    font-style: italic;
-    line-height: 1.6em;
-    color: #888;
-    margin-top: 20px;
-    padding-top: 60px;
-    background: url(images/quotes.png) no-repeat;
+  width: 66%;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.6em;
+  color: #888;
+  margin-top: 20px;
+  padding-top: 60px;
+  background: url(images/quotes.png) no-repeat;
+}
+
+section .contact {
+  display: flex;
+}
+
+#contact-methods li {
+  display: flex;
+  list-style: none;
+  color: #888;
+  line-height: 30px;
+}
+
+#contact-methods li::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  /* float: left; */
+  margin-right: 10px;
+  background-image: url(images/logo-sprite.png);
+}
+
+#contact-methods li:nth-child(1):before {
+  background-position: -158px 0;
+}
+
+#contact-methods li:nth-child(2):before {
+  background-position: -198px 0;
+}
+
+#contact-methods li:nth-child(3):before {
+  background-position: -238px 0;
 }
